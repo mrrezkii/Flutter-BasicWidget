@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/ui/pages/pages.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,31 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: FirstScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: MainPage(),
     );
   }
 }
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("First screen"),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.search,
-              color: Colors.white,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
