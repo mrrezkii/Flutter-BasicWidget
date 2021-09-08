@@ -74,6 +74,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.22.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///home/nando/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -116,6 +122,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_drawing",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path_provider",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.3",
       "packageUri": "lib/",
@@ -148,6 +166,12 @@
     {
       "name": "pedantic",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -236,13 +260,19 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_basic",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-07T22:24:36.940096Z",
+  "generated": "2021-09-08T03:16:57.433638Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

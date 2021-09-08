@@ -46,6 +46,10 @@ file
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/lib/
+flutter_svg
+2.12
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.22.0/
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.22.0/lib/
 google_fonts
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0/
@@ -70,6 +74,14 @@ path
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib/
+path_drawing
+2.12
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1/
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1/lib/
+path_parsing
+2.12
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1/
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1/lib/
 path_provider
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.3/
@@ -94,6 +106,10 @@ pedantic
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/lib/
+petitparser
+2.12
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.1.0/
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.1.0/lib/
 platform
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.2/
@@ -146,6 +162,10 @@ xdg_directories
 2.12
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0/
 file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0/lib/
+xml
+2.12
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.1.2/
+file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.1.2/lib/
 sky_engine
 2.12
 file:///home/nando/flutter/bin/cache/pkg/sky_engine/

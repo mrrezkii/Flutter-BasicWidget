@@ -50,6 +50,22 @@ class MainPage extends StatelessWidget {
                 )
               ],
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Image.asset("assets/images/iklan.png"),
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                MenuIcon('Bumper', "assets/vector/ic_bumper.svg"),
+                MenuIcon('Open Trip', "assets/vector/ic_open_trip.svg"),
+                MenuIcon('Nimbrung', "assets/vector/ic_nimbrung.svg"),
+                MenuIcon('Promo', "assets/vector/ic_promo.svg"),
+              ],
+            )
           ],
         ),
       ),
