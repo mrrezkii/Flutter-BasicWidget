@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.fromLTRB(24, 55, 24, 0),
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Row(
@@ -110,6 +111,6 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
