@@ -28,3 +28,15 @@ TextStyle yellowSemiTextFont = GoogleFonts.poppins()
 
 TextStyle yellowBoldTextFont = GoogleFonts.poppins()
     .copyWith(color: accentColor, fontWeight: FontWeight.w700);
+
+TextStyle blackTextFont = GoogleFonts.poppins()
+    .copyWith(color: blackColor, fontWeight: FontWeight.w400);
+
+TextStyle blackMediumTextFont = GoogleFonts.poppins()
+    .copyWith(color: blackColor, fontWeight: FontWeight.w500);
+
+TextStyle blackSemiTextFont = GoogleFonts.poppins()
+    .copyWith(color: blackColor, fontWeight: FontWeight.w600);
+
+TextStyle blackBoldTextFont = GoogleFonts.poppins()
+    .copyWith(color: blackColor, fontWeight: FontWeight.w700);

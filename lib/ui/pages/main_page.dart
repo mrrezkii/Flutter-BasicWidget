@@ -65,7 +65,48 @@ class MainPage extends StatelessWidget {
                 MenuIcon('Nimbrung', "assets/vector/ic_nimbrung.svg"),
                 MenuIcon('Promo', "assets/vector/ic_promo.svg"),
               ],
-            )
+            ),
+            SizedBox(
+              height: 33,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Populer di ',
+                      style: blueSemiTextFont.copyWith(
+                          fontSize: 14, color: blackColor),
+                    ),
+                    Text(
+                      'Bandung ',
+                      style: blueSemiTextFont.copyWith(fontSize: 14),
+                    ),
+                  ],
+                ),
+                Text(
+                  'Lihat Semua',
+                  style: blueMediumTextFont.copyWith(fontSize: 10),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 21,
+            ),
+            Container(
+              width: double.infinity,
+              height: 160,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Row(
+                    children: mockPlace.map((e) => PlaceCard(e)).toList(),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

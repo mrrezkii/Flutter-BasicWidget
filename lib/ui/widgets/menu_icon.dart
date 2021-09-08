@@ -30,7 +30,7 @@ class MenuIcon extends StatelessWidget {
         ),
         Text(
           title,
-          style: blueSemiTextFont.copyWith(fontSize: 10),
+          style: blueMediumTextFont.copyWith(fontSize: 10),
         )
       ],
     );

@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4136e3ea-27d1-4380-9298-f59bb090e7d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/iklan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vector/ic_bumper.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vector/ic_nimbrung.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vector/ic_open_trip.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vector/ic_promo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/widgets/menu_icon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/place_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/widgets/place_card.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/pages/main_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/pages/pages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/pages/pages.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/menu_icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/menu_icon.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1xlPgKEHwr87Vz4zy5xzQpxUPxX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631053551350</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Menu icon widget">
+      <created>1631073132769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631073132769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -109,7 +117,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add text header in main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add text header in main page" />
+    <MESSAGE value="Menu icon widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu icon widget" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
