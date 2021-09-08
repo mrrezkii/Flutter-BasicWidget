@@ -1,3 +1,15 @@
+## Tugas 2 - Flutter Basic
+
+Nama : Muhammad Rezki Ananda
+<br>
+Asal : Universitas Telkom
+
+### Screenshot Screen
+
+<img src="https://raw.githubusercontent.com/newbiexpert/Flutter-BasicWidget/master/screenshots/Screenshot_1631107448.png" width="200" />
+
+<img src="https://raw.githubusercontent.com/newbiexpert/Flutter-BasicWidget/master/screenshots/Screenshot_1631107452.png" width="200" />
+
 # flutter_basic
 
 A new Flutter project.
