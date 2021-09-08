@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4136e3ea-27d1-4380-9298-f59bb090e7d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/pages/home_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631105789128</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix error overflow at home page">
+      <created>1631106876812</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631106876812</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -128,7 +134,8 @@
     <MESSAGE value="Menu icon widget" />
     <MESSAGE value="Add place card" />
     <MESSAGE value="Add bottom navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bottom navigation" />
+    <MESSAGE value="Fix error overflow at home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix error overflow at home page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
