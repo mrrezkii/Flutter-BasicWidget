@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4136e3ea-27d1-4380-9298-f59bb090e7d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/model/place_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/widgets/place_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vector/ic_account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vector/ic_home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vector/ic_notification.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vector/ic_order.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/pages/account_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/pages/home_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/pages/notification_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/pages/order_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/shared/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/pages/main_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/pages/pages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/pages/pages.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/menu_icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/menu_icon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widgets/widgets.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +55,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -95,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631073132769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add place card">
+      <created>1631094937209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631094937209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -111,6 +121,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -118,7 +129,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add text header in main page" />
     <MESSAGE value="Menu icon widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu icon widget" />
+    <MESSAGE value="Add place card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add place card" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
