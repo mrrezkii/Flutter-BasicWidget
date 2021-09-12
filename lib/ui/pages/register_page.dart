@@ -1,11 +1,18 @@
 part of 'pages.dart';
 
+enum gender { M, F }
+
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  gender? chooseGender = gender.M;
+  bool? cbBumper = false;
+  bool? cbShareCost = false;
+  bool? cbOpenTrip = false;
+
   @override
   Widget build(BuildContext context) {
     TextEditingController namaController = TextEditingController();
@@ -29,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 height: 10,
               ),
               Text(
-                "Masuk Akun",
+                "Registrasi Akun",
                 style: blackSemiTextFont.copyWith(fontSize: 18),
               ),
               SizedBox(
@@ -44,7 +51,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     contentPadding: EdgeInsets.fromLTRB(16, 5, 0, 5),
                     hintStyle:
-                        blackTextFont.copyWith(color: greyColor, fontSize: 14)),
+                    blackTextFont.copyWith(color: greyColor, fontSize: 14)),
               ),
               SizedBox(
                 height: 12,
@@ -58,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     contentPadding: EdgeInsets.fromLTRB(16, 5, 0, 5),
                     hintStyle:
-                        blackTextFont.copyWith(color: greyColor, fontSize: 14)),
+                    blackTextFont.copyWith(color: greyColor, fontSize: 14)),
               ),
               SizedBox(
                 height: 12,
@@ -73,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     contentPadding: EdgeInsets.fromLTRB(16, 5, 0, 5),
                     hintStyle:
-                        blackTextFont.copyWith(color: greyColor, fontSize: 14)),
+                    blackTextFont.copyWith(color: greyColor, fontSize: 14)),
               ),
               SizedBox(
                 height: 12,
@@ -89,7 +96,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     contentPadding: EdgeInsets.fromLTRB(16, 5, 0, 5),
                     hintStyle:
-                        blackTextFont.copyWith(color: greyColor, fontSize: 14)),
+                    blackTextFont.copyWith(color: greyColor, fontSize: 14)),
                 onTap: () {
                   DatePicker.showDatePicker(context,
                       showTitleActions: true,
@@ -102,7 +109,121 @@ class _RegisterPageState extends State<RegisterPage> {
                         "${date.day}-${date.weekday}-${date.year}";
                   }, currentTime: DateTime.now(), locale: LocaleType.id);
                 },
-              )
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                'Jenis Kelamin',
+                style: blackTextFont.copyWith(fontSize: 14),
+              ),
+              Row(
+                children: [
+                  Row(
+                    children: [
+                      Radio(
+                        value: gender.M,
+                        groupValue: chooseGender,
+                        onChanged: (gender? value) {
+                          setState(() {
+                            chooseGender = value;
+                          });
+                        },
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text('Laki - laki',
+                          style: blackTextFont.copyWith(fontSize: 14))
+                    ],
+                  ),
+                  SizedBox(
+                    width: 60,
+                  ),
+                  Row(
+                    children: [
+                      Radio(
+                        value: gender.F,
+                        groupValue: chooseGender,
+                        onChanged: (gender? value) {
+                          setState(() {
+                            chooseGender = value;
+                          });
+                        },
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text('Perempuan',
+                          style: blackTextFont.copyWith(fontSize: 14))
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                'Rekomendasi Pencarian',
+                style: blackTextFont.copyWith(fontSize: 14),
+              ),
+              Row(
+                children: [
+                  Row(
+                    children: [
+                      Checkbox(
+                        value: cbBumper,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            cbBumper = value;
+                          });
+                        },
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text('Bumper',
+                          style: blackTextFont.copyWith(fontSize: 14))
+                    ],
+                  ),
+                  SizedBox(
+                    width: 54,
+                  ),
+                  Row(
+                    children: [
+                      Checkbox(
+                        value: cbShareCost,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            cbShareCost = value;
+                          });
+                        },
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text('Share Cost',
+                          style: blackTextFont.copyWith(fontSize: 14))
+                    ],
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Checkbox(
+                    value: cbOpenTrip,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        cbOpenTrip = value;
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text('Open Trip', style: blackTextFont.copyWith(fontSize: 14))
+                ],
+              ),
             ],
           ),
         ),
