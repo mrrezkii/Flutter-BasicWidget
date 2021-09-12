@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "another_flushbar",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/another_flushbar-1.10.24",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1",
       "packageUri": "lib/",
@@ -46,6 +52,12 @@
     {
       "name": "cupertino_icons",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "email_validator",
+      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/email_validator-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -278,7 +290,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-11T02:55:26.886587Z",
+  "generated": "2021-09-12T12:44:22.049383Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

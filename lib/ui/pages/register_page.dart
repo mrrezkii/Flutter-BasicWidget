@@ -234,7 +234,36 @@ class _RegisterPageState extends State<RegisterPage> {
                   child: Text('Registrasi Akun',
                       style: blackTextFont.copyWith(
                           fontSize: 14, color: Colors.white)),
-                  onPressed: () {},
+                  onPressed: () {
+                    if (namaController.text.trim() == "" ||
+                        emailController.text.trim() == "" ||
+                        passwordController.text.trim() == "" ||
+                        tanggalLahirController.text.trim() == "") {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Lengkapi data Anda",
+                      )..show(context);
+                    } else if (!(EmailValidator.validate(
+                        emailController.text))) {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Email yang Anda masukkan tidak valid",
+                      )..show(context);
+                    } else if (passwordController.text.length < 7) {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Masukkan password minimal 7 karakter",
+                      )..show(context);
+                    } else {
+                      /// CALL TO ACTION
+                    }
+                  },
                 ),
               ),
               SizedBox(
