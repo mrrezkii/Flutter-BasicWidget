@@ -224,6 +224,40 @@ class _RegisterPageState extends State<RegisterPage> {
                   Text('Open Trip', style: blackTextFont.copyWith(fontSize: 14))
                 ],
               ),
+              Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: accentColor,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 128, vertical: 10),
+                  ),
+                  child: Text('Registrasi Akun',
+                      style: blackTextFont.copyWith(
+                          fontSize: 14, color: Colors.white)),
+                  onPressed: () {},
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Sudah punya akun ?',
+                    style: blackTextFont.copyWith(fontSize: 12),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Masuk',
+                    style: blueTextFont.copyWith(fontSize: 12),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
             ],
           ),
         ),
