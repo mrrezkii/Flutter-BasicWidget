@@ -33,6 +33,7 @@ dependencies:
   flutter_datetime_picker: ^1.5.1
   another_flushbar: ^1.10.24
   email_validator: ^2.0.1
+  awesome_dialog: ^2.1.1
 
 
 

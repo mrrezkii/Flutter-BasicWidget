@@ -235,34 +235,118 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: blackTextFont.copyWith(
                           fontSize: 14, color: Colors.white)),
                   onPressed: () {
-                    if (namaController.text.trim() == "" ||
-                        emailController.text.trim() == "" ||
-                        passwordController.text.trim() == "" ||
-                        tanggalLahirController.text.trim() == "") {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Lengkapi data Anda",
-                      )..show(context);
-                    } else if (!(EmailValidator.validate(
-                        emailController.text))) {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Email yang Anda masukkan tidak valid",
-                      )..show(context);
-                    } else if (passwordController.text.length < 7) {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Masukkan password minimal 7 karakter",
-                      )..show(context);
-                    } else {
-                      /// CALL TO ACTION
-                    }
+                    AwesomeDialog(
+                      context: context,
+                      animType: AnimType.SCALE,
+                      dialogType: DialogType.QUESTION,
+                      body: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  "Nama : ",
+                                  style: blackTextFont.copyWith(fontSize: 14),
+                                ),
+                                Text(
+                                  namaController.text,
+                                  style:
+                                      blackBoldTextFont.copyWith(fontSize: 14),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Email : ",
+                                  style: blackTextFont.copyWith(fontSize: 14),
+                                ),
+                                Text(
+                                  emailController.text,
+                                  style:
+                                      blackBoldTextFont.copyWith(fontSize: 14),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Tanggal Lahir : ",
+                                  style: blackTextFont.copyWith(fontSize: 14),
+                                ),
+                                Text(
+                                  tanggalLahirController.text,
+                                  style:
+                                      blackBoldTextFont.copyWith(fontSize: 14),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Tanggal Lahir : ",
+                                  style: blackTextFont.copyWith(fontSize: 14),
+                                ),
+                                Text(
+                                  (chooseGender == gender.M)
+                                      ? "Laki - laki"
+                                      : "Perempuan",
+                                  style:
+                                      blackBoldTextFont.copyWith(fontSize: 14),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Rekomendasi Pencarian : ",
+                                  style: blackTextFont.copyWith(fontSize: 14),
+                                ),
+                                Text(
+                                  (chooseGender == gender.M)
+                                      ? "Laki - laki"
+                                      : "Perempuan",
+                                  style:
+                                      blackBoldTextFont.copyWith(fontSize: 14),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      title: 'Registrasi Berhasil',
+                      desc: 'Registrasi Berhasil',
+                      btnCancelOnPress: () {},
+                    )..show();
+                    // if (namaController.text.trim() == "" ||
+                    //     emailController.text.trim() == "" ||
+                    //     passwordController.text.trim() == "" ||
+                    //     tanggalLahirController.text.trim() == "") {
+                    //   Flushbar(
+                    //     duration: Duration(milliseconds: 1500),
+                    //     flushbarPosition: FlushbarPosition.TOP,
+                    //     backgroundColor: primaryColor,
+                    //     message: "Lengkapi data Anda",
+                    //   )..show(context);
+                    // } else if (!(EmailValidator.validate(
+                    //     emailController.text))) {
+                    //   Flushbar(
+                    //     duration: Duration(milliseconds: 1500),
+                    //     flushbarPosition: FlushbarPosition.TOP,
+                    //     backgroundColor: primaryColor,
+                    //     message: "Email yang Anda masukkan tidak valid",
+                    //   )..show(context);
+                    // } else if (passwordController.text.length < 7) {
+                    //   Flushbar(
+                    //     duration: Duration(milliseconds: 1500),
+                    //     flushbarPosition: FlushbarPosition.TOP,
+                    //     backgroundColor: primaryColor,
+                    //     message: "Masukkan password minimal 7 karakter",
+                    //   )..show(context);
+                    // } else {
+                    //   /// CALL TO ACTION
+                    // }
                   },
                 ),
               ),
