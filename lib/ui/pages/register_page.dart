@@ -8,6 +8,11 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  TextEditingController namaController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  TextEditingController tanggalLahirController = TextEditingController();
+
   gender? chooseGender = gender.M;
   bool? cbBumper = false;
   bool? cbShareCost = false;
@@ -15,11 +20,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController namaController = TextEditingController();
-    TextEditingController emailController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
-    TextEditingController tanggalLahirController = TextEditingController();
-
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.fromLTRB(24, 55, 24, 0),
@@ -235,118 +235,136 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: blackTextFont.copyWith(
                           fontSize: 14, color: Colors.white)),
                   onPressed: () {
-                    AwesomeDialog(
-                      context: context,
-                      animType: AnimType.SCALE,
-                      dialogType: DialogType.QUESTION,
-                      body: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  "Nama : ",
-                                  style: blackTextFont.copyWith(fontSize: 14),
-                                ),
-                                Text(
-                                  namaController.text,
+                    if (namaController.text.trim() == "" ||
+                        emailController.text.trim() == "" ||
+                        passwordController.text.trim() == "" ||
+                        tanggalLahirController.text.trim() == "") {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Lengkapi data Anda",
+                      )..show(context);
+                    } else if (!(EmailValidator.validate(
+                        emailController.text))) {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Email yang Anda masukkan tidak valid",
+                      )..show(context);
+                    } else if (passwordController.text.length < 7) {
+                      Flushbar(
+                        duration: Duration(milliseconds: 1500),
+                        flushbarPosition: FlushbarPosition.TOP,
+                        backgroundColor: primaryColor,
+                        message: "Masukkan password minimal 7 karakter",
+                      )..show(context);
+                    } else {
+                      List tempCb = [];
+                      if (cbBumper == true) tempCb.add("Bumper");
+                      if (cbShareCost == true) tempCb.add("Share Cost");
+                      if (cbOpenTrip == true) tempCb.add("Open Trip");
+                      var enableCb = tempCb.join(', ');
+
+                      AwesomeDialog(
+                        context: context,
+                        animType: AnimType.SCALE,
+                        dialogType: DialogType.QUESTION,
+                        body: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Center(
+                                child: Text(
+                                  "Apa Anda yakin ?",
                                   style:
-                                      blackBoldTextFont.copyWith(fontSize: 14),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Email : ",
-                                  style: blackTextFont.copyWith(fontSize: 14),
+                                      blackBoldTextFont.copyWith(fontSize: 20),
                                 ),
-                                Text(
-                                  emailController.text,
-                                  style:
-                                      blackBoldTextFont.copyWith(fontSize: 14),
+                              ),
+                              SizedBox(
+                                height: 25,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Nama : ",
+                                    style: blackTextFont.copyWith(fontSize: 14),
+                                  ),
+                                  Text(
+                                    namaController.text,
+                                    style: blackBoldTextFont.copyWith(
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Email : ",
+                                    style: blackTextFont.copyWith(fontSize: 14),
+                                  ),
+                                  Text(
+                                    emailController.text,
+                                    style: blackBoldTextFont.copyWith(
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Tanggal Lahir : ",
+                                    style: blackTextFont.copyWith(fontSize: 14),
+                                  ),
+                                  Text(
+                                    tanggalLahirController.text,
+                                    style: blackBoldTextFont.copyWith(
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Jenis kelamin : ",
+                                    style: blackTextFont.copyWith(fontSize: 14),
+                                  ),
+                                  Text(
+                                    (chooseGender == gender.M)
+                                        ? "Laki - laki"
+                                        : "Perempuan",
+                                    style: blackBoldTextFont.copyWith(
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              if (enableCb.isNotEmpty)
+                                Row(
+                                  children: [
+                                    Text(
+                                      "Pencarian : ",
+                                      style:
+                                          blackTextFont.copyWith(fontSize: 14),
+                                    ),
+                                    Text(
+                                      enableCb,
+                                      style: blackBoldTextFont.copyWith(
+                                          fontSize: 14),
+                                    )
+                                  ],
                                 )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Tanggal Lahir : ",
-                                  style: blackTextFont.copyWith(fontSize: 14),
-                                ),
-                                Text(
-                                  tanggalLahirController.text,
-                                  style:
-                                      blackBoldTextFont.copyWith(fontSize: 14),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Tanggal Lahir : ",
-                                  style: blackTextFont.copyWith(fontSize: 14),
-                                ),
-                                Text(
-                                  (chooseGender == gender.M)
-                                      ? "Laki - laki"
-                                      : "Perempuan",
-                                  style:
-                                      blackBoldTextFont.copyWith(fontSize: 14),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Rekomendasi Pencarian : ",
-                                  style: blackTextFont.copyWith(fontSize: 14),
-                                ),
-                                Text(
-                                  (chooseGender == gender.M)
-                                      ? "Laki - laki"
-                                      : "Perempuan",
-                                  style:
-                                      blackBoldTextFont.copyWith(fontSize: 14),
-                                )
-                              ],
-                            ),
-                          ],
+                              else
+                                SizedBox(),
+                            ],
+                          ),
                         ),
-                      ),
-                      title: 'Registrasi Berhasil',
-                      desc: 'Registrasi Berhasil',
-                      btnCancelOnPress: () {},
-                    )..show();
-                    // if (namaController.text.trim() == "" ||
-                    //     emailController.text.trim() == "" ||
-                    //     passwordController.text.trim() == "" ||
-                    //     tanggalLahirController.text.trim() == "") {
-                    //   Flushbar(
-                    //     duration: Duration(milliseconds: 1500),
-                    //     flushbarPosition: FlushbarPosition.TOP,
-                    //     backgroundColor: primaryColor,
-                    //     message: "Lengkapi data Anda",
-                    //   )..show(context);
-                    // } else if (!(EmailValidator.validate(
-                    //     emailController.text))) {
-                    //   Flushbar(
-                    //     duration: Duration(milliseconds: 1500),
-                    //     flushbarPosition: FlushbarPosition.TOP,
-                    //     backgroundColor: primaryColor,
-                    //     message: "Email yang Anda masukkan tidak valid",
-                    //   )..show(context);
-                    // } else if (passwordController.text.length < 7) {
-                    //   Flushbar(
-                    //     duration: Duration(milliseconds: 1500),
-                    //     flushbarPosition: FlushbarPosition.TOP,
-                    //     backgroundColor: primaryColor,
-                    //     message: "Masukkan password minimal 7 karakter",
-                    //   )..show(context);
-                    // } else {
-                    //   /// CALL TO ACTION
-                    // }
+                        title: 'Registrasi Berhasil',
+                        desc: 'Registrasi Berhasil',
+                        btnOkOnPress: () {},
+                        btnCancelOnPress: () {},
+                      )..show();
+                    }
                   },
                 ),
               ),
