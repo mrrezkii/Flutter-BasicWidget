@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -30,6 +35,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1xlPgKEHwr87Vz4zy5xzQpxUPxX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,6 +59,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/screenshots" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -108,7 +117,84 @@
       <option name="project" value="LOCAL" />
       <updated>1631106876812</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Upload ss">
+      <created>1631107811326</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631107811328</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Text field in register page">
+      <created>1631329511080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631329511080</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Radio button &amp; checkbox">
+      <created>1631446551847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631446551847</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ElevatedButton">
+      <created>1631450275814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631450275814</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add flushbar notification">
+      <created>1631451620038</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631451620038</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add awesome dialog">
+      <created>1631535683864</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631535683865</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Show data to Dialog">
+      <created>1631588553702</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631588553702</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Remove awesome dialog">
+      <created>1631673102620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631673102620</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Remove flutter datetime picker">
+      <created>1631673928104</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631673928104</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Remove another flushbar">
+      <created>1631674517852</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631674517852</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Remove email validator">
+      <created>1631692600659</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631692600659</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -135,7 +221,18 @@
     <MESSAGE value="Add place card" />
     <MESSAGE value="Add bottom navigation" />
     <MESSAGE value="Fix error overflow at home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix error overflow at home page" />
+    <MESSAGE value="Upload ss" />
+    <MESSAGE value="Text field in register page" />
+    <MESSAGE value="Radio button &amp; checkbox" />
+    <MESSAGE value="ElevatedButton" />
+    <MESSAGE value="Add flushbar notification" />
+    <MESSAGE value="Add awesome dialog" />
+    <MESSAGE value="Show data to Dialog" />
+    <MESSAGE value="Remove awesome dialog" />
+    <MESSAGE value="Remove flutter datetime picker" />
+    <MESSAGE value="Remove another flushbar" />
+    <MESSAGE value="Remove email validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove email validator" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
