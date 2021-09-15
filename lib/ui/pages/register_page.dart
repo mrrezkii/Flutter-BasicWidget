@@ -236,6 +236,9 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: blackTextFont.copyWith(
                           fontSize: 14, color: Colors.white)),
                   onPressed: () {
+                    bool emailValid = RegExp(
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                        .hasMatch(emailController.text);
                     if (namaController.text.trim() == "" ||
                         emailController.text.trim() == "" ||
                         passwordController.text.trim() == "" ||
@@ -248,8 +251,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       );
                       ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                    } else if (!(EmailValidator.validate(
-                        emailController.text))) {
+                    } else if (!(emailValid)) {
                       final snackBar = SnackBar(
                         content:
                             const Text('Email yang Anda masukkan tidak valid'),
@@ -262,7 +264,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     } else if (passwordController.text.length < 7) {
                       final snackBar = SnackBar(
                         content:
-                            const Text('Masukkan password minimal 7 karakter'),
+                        const Text('Masukkan password minimal 7 karakter'),
                         action: SnackBarAction(
                           onPressed: () {},
                           label: '',
@@ -278,14 +280,14 @@ class _RegisterPageState extends State<RegisterPage> {
                       showDialog(
                           context: context,
                           builder: (context) => CustomDialog(
-                                nama: namaController.text,
-                                email: emailController.text,
-                                tanggal_lahir: tanggalLahirController.text,
-                                jenis_kelamin: (chooseGender == gender.M)
-                                    ? "Laki - laki"
-                                    : "Perempuan",
-                                rekomendasi: enableCb,
-                              ));
+                            nama: namaController.text,
+                            email: emailController.text,
+                            tanggal_lahir: tanggalLahirController.text,
+                            jenis_kelamin: (chooseGender == gender.M)
+                                ? "Laki - laki"
+                                : "Perempuan",
+                            rekomendasi: enableCb,
+                          ));
                     }
                   },
                 ),

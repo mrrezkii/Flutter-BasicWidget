@@ -30,7 +30,6 @@ dependencies:
   cupertino_icons: ^1.0.3
   google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
-  email_validator: ^2.0.1
 
 
 
