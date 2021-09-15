@@ -98,16 +98,17 @@ class _RegisterPageState extends State<RegisterPage> {
                     hintStyle:
                     blackTextFont.copyWith(color: greyColor, fontSize: 14)),
                 onTap: () {
-                  DatePicker.showDatePicker(context,
-                      showTitleActions: true,
-                      minTime: DateTime(1945, 1, 1),
-                      maxTime: DateTime(2022, 1, 1), onChanged: (date) {
-                    print('change $date');
-                  }, onConfirm: (date) {
-                    print('confirm $date');
-                    tanggalLahirController.text =
-                        "${date.day}-${date.weekday}-${date.year}";
-                  }, currentTime: DateTime.now(), locale: LocaleType.id);
+                  showDatePicker(
+                          context: context,
+                          initialDate: DateTime(2000),
+                          firstDate: DateTime(1945),
+                          lastDate: DateTime.now())
+                      .then((date) {
+                    setState(() {
+                      tanggalLahirController.text =
+                          "${date!.day}-${date.weekday}-${date.year}";
+                    });
+                  });
                 },
               ),
               SizedBox(
