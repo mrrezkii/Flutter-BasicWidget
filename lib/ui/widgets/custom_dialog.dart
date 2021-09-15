@@ -1,4 +1,5 @@
-part of 'widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
 
 class CustomDialog extends StatelessWidget {
   final String nama;

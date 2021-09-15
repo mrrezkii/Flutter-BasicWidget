@@ -1,5 +1,3 @@
-part of 'model.dart';
-
 class PlaceModel {
   final String name;
   final String location;

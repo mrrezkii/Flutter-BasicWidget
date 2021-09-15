@@ -1,4 +1,10 @@
-part of 'pages.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/model/place_model.dart';
+import 'package:flutter_basic/shared/theme.dart';
+import 'package:flutter_basic/ui/widgets/menu_icon.dart';
+import 'package:flutter_basic/ui/widgets/place_card.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -6,8 +12,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(24, 55, 24, 0),
+        body: Padding(
+      padding: const EdgeInsets.fromLTRB(24, 55, 24, 0),
       child: SingleChildScrollView(
         child: Column(
           children: [

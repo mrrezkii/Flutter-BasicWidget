@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic/ui/pages/pages.dart';
+import 'package:flutter_basic/ui/pages/register_page.dart';
 
 void main() {
   runApp(MyApp());

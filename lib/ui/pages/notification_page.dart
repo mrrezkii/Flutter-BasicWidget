@@ -1,4 +1,5 @@
-part of 'pages.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({Key? key}) : super(key: key);

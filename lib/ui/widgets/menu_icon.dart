@@ -1,4 +1,6 @@
-part of 'widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MenuIcon extends StatelessWidget {
   final String title;

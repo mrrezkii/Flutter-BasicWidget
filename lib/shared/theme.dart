@@ -1,4 +1,5 @@
-part of 'shared.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const primaryColor = Color(0xFF2386D8);
 const accentColor = Color(0xFFFFC947);

@@ -1,4 +1,6 @@
-part of 'pages.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
+import 'package:flutter_basic/ui/widgets/custom_dialog.dart';
 
 enum gender { M, F }
 

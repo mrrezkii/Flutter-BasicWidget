@@ -1,4 +1,5 @@
-part of 'pages.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
 
 class OrderPage extends StatelessWidget {
   const OrderPage({Key? key}) : super(key: key);

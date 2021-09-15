@@ -1,4 +1,11 @@
-part of 'pages.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_basic/shared/theme.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+import 'account_page.dart';
+import 'home_page.dart';
+import 'notification_page.dart';
+import 'order_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
