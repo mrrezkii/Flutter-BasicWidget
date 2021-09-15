@@ -14,12 +14,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "awesome_dialog",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/awesome_dialog-2.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "boolean_selector",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
       "packageUri": "lib/",
@@ -82,12 +76,6 @@
     {
       "name": "file",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flare_flutter",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -224,12 +212,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "simple_animations",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/simple_animations-3.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "sky_engine",
       "rootUri": "file:///home/nando/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -256,18 +238,6 @@
     {
       "name": "string_scanner",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "supercharged",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/supercharged-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "supercharged_dart",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/supercharged_dart-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -320,7 +290,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-12T13:33:56.172128Z",
+  "generated": "2021-09-15T02:30:42.575555Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

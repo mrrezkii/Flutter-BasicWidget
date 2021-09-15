@@ -266,104 +266,17 @@ class _RegisterPageState extends State<RegisterPage> {
                       if (cbShareCost == true) tempCb.add("Share Cost");
                       if (cbOpenTrip == true) tempCb.add("Open Trip");
                       var enableCb = tempCb.join(', ');
-
-                      AwesomeDialog(
-                        context: context,
-                        animType: AnimType.SCALE,
-                        dialogType: DialogType.QUESTION,
-                        body: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                            children: [
-                              Center(
-                                child: Text(
-                                  "Apa Anda yakin ?",
-                                  style:
-                                      blackBoldTextFont.copyWith(fontSize: 20),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 25,
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Nama : ",
-                                    style: blackTextFont.copyWith(fontSize: 14),
-                                  ),
-                                  Text(
-                                    namaController.text,
-                                    style: blackBoldTextFont.copyWith(
-                                        fontSize: 14),
-                                  )
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Email : ",
-                                    style: blackTextFont.copyWith(fontSize: 14),
-                                  ),
-                                  Text(
-                                    emailController.text,
-                                    style: blackBoldTextFont.copyWith(
-                                        fontSize: 14),
-                                  )
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Tanggal Lahir : ",
-                                    style: blackTextFont.copyWith(fontSize: 14),
-                                  ),
-                                  Text(
-                                    tanggalLahirController.text,
-                                    style: blackBoldTextFont.copyWith(
-                                        fontSize: 14),
-                                  )
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Jenis kelamin : ",
-                                    style: blackTextFont.copyWith(fontSize: 14),
-                                  ),
-                                  Text(
-                                    (chooseGender == gender.M)
-                                        ? "Laki - laki"
-                                        : "Perempuan",
-                                    style: blackBoldTextFont.copyWith(
-                                        fontSize: 14),
-                                  )
-                                ],
-                              ),
-                              if (enableCb.isNotEmpty)
-                                Row(
-                                  children: [
-                                    Text(
-                                      "Pencarian : ",
-                                      style:
-                                          blackTextFont.copyWith(fontSize: 14),
-                                    ),
-                                    Text(
-                                      enableCb,
-                                      style: blackBoldTextFont.copyWith(
-                                          fontSize: 14),
-                                    )
-                                  ],
-                                )
-                              else
-                                SizedBox(),
-                            ],
-                          ),
-                        ),
-                        title: 'Registrasi Berhasil',
-                        desc: 'Registrasi Berhasil',
-                        btnOkOnPress: () {},
-                        btnCancelOnPress: () {},
-                      )..show();
+                      showDialog(
+                          context: context,
+                          builder: (context) => CustomDialog(
+                                nama: namaController.text,
+                                email: emailController.text,
+                                tanggal_lahir: tanggalLahirController.text,
+                                jenis_kelamin: (chooseGender == gender.M)
+                                    ? "Laki - laki"
+                                    : "Perempuan",
+                                rekomendasi: enableCb,
+                              ));
                     }
                   },
                 ),
