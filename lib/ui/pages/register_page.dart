@@ -240,27 +240,35 @@ class _RegisterPageState extends State<RegisterPage> {
                         emailController.text.trim() == "" ||
                         passwordController.text.trim() == "" ||
                         tanggalLahirController.text.trim() == "") {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Lengkapi data Anda",
-                      )..show(context);
+                      final snackBar = SnackBar(
+                        content: const Text('Lengkapi data Anda'),
+                        action: SnackBarAction(
+                          onPressed: () {},
+                          label: '',
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     } else if (!(EmailValidator.validate(
                         emailController.text))) {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Email yang Anda masukkan tidak valid",
-                      )..show(context);
+                      final snackBar = SnackBar(
+                        content:
+                            const Text('Email yang Anda masukkan tidak valid'),
+                        action: SnackBarAction(
+                          onPressed: () {},
+                          label: '',
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     } else if (passwordController.text.length < 7) {
-                      Flushbar(
-                        duration: Duration(milliseconds: 1500),
-                        flushbarPosition: FlushbarPosition.TOP,
-                        backgroundColor: primaryColor,
-                        message: "Masukkan password minimal 7 karakter",
-                      )..show(context);
+                      final snackBar = SnackBar(
+                        content:
+                            const Text('Masukkan password minimal 7 karakter'),
+                        action: SnackBarAction(
+                          onPressed: () {},
+                          label: '',
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     } else {
                       List tempCb = [];
                       if (cbBumper == true) tempCb.add("Bumper");

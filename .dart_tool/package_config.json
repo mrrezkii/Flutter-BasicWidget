@@ -2,12 +2,6 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "another_flushbar",
-      "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/another_flushbar-1.10.24",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "async",
       "rootUri": "file:///home/nando/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1",
       "packageUri": "lib/",
@@ -284,7 +278,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-15T02:44:36.410399Z",
+  "generated": "2021-09-15T02:54:29.989186Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }
